@@ -6,10 +6,10 @@ router.get("/", function (req, res, next) {
   res.send("Te devolvi imagenes");
 });
 
-router.post("/add", upload.single("file"), (req, res) => {
+/*router.post("/add", upload.single("file"), (req, res) => {
   console.log("body", req.file.length, req.file);
   res.json({ success: true });
-});
+});*/
 
 router.delete("/delete", function (req, res, next) {
   res.send("Endpoint funcional");
