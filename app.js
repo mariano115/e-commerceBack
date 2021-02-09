@@ -11,6 +11,7 @@ var indexRouter = require("./routes/index");
 var userRouter = require("./routes/user");
 var loginRouter = require("./api/login");
 var catalogRouter = require("./api/catalog");
+var sendEmailRouter = require("./api/sendEmail");
 
 var app = express();
 
@@ -43,6 +44,7 @@ app.use("/", indexRouter);
 app.use("/user", userRouter);
 app.use("/login", loginRouter);
 app.use("/catalog", catalogRouter);
+app.use("/sendemail", sendEmailRouter);
 console.log("server ok");
 
 // catch 404 and forward to error handler
